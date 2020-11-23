@@ -1,0 +1,49 @@
+.footer {
+  background-image: url("/images/background-footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  min-height: 500px;
+  margin-top: 30px;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 60px;
+  }
+
+  .row {
+    margin-top: 180px;
+  }
+
+  .informasi {
+    @include media-breakpoint-up(md) {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+    }
+    ul {
+      margin-top: 20px;
+
+      li {
+        list-style-image: url("/images/icon-list-style.png");
+        margin-bottom: 8px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .bantuan {
+    ul {
+      margin-top: 15px;
+      margin-left: -20px;
+      li {
+        display: inline;
+        list-style: none;
+        margin-right: 10px;
+      }
+    }
+  }
+}

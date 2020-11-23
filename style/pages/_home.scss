@@ -1,0 +1,217 @@
+.cetakme-carousel {
+  position: relative;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  @include media-breakpoint-up(md) {
+    background-size: cover;
+    width: 100%;
+  }
+  // margin-top: 180px;
+  .carousel {
+    img {
+      // -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
+      // -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+    }
+    h1 {
+      margin-top: 170px;
+      padding-bottom: 10px;
+      font-size: 55px;
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+      }
+    }
+    p {
+      @include media-breakpoint-down(md) {
+        color: #000;
+      }
+    }
+    .btn-more {
+      background-color: #c1272d;
+
+      @include media-breakpoint-down(md) {
+        background-color: #c1272d;
+      }
+    }
+  }
+}
+
+// produk paling laris
+
+.paling-laris {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  h1 {
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+    }
+    margin-left: -50px;
+    font-size: 40px;
+    font-weight: bold;
+    span {
+      color: #c1272d;
+    }
+  }
+  hr {
+    margin-left: -40px;
+    border: 1px solid #000;
+  }
+
+  .list-product {
+    // margin-left: 60px;
+    background-image: url("/images/icon-4.png");
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 20px;
+    }
+
+    img {
+      box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// pembatas
+.produk,
+.artikel,
+.produk-terkait {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  h1 {
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+    }
+    margin-left: -50px;
+    font-size: 40px;
+    font-weight: bold;
+    span {
+      color: #c1272d;
+    }
+  }
+
+  hr {
+    margin-left: -40px;
+    border: 1px solid #000;
+  }
+}
+
+// produk
+.figure-img {
+  position: relative;
+  p {
+    font-size: 30px;
+  }
+}
+
+.figure-img {
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.8s;
+  }
+}
+
+.figure-img {
+  a {
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}
+
+.figure-product {
+  position: relative;
+  .gambar-product {
+    width: 100%;
+    height: 100%;
+  }
+  .icon-discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+  }
+
+  .discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    align-items: center;
+    color: #000;
+
+    span {
+      font-size: 15px;
+      font-weight: 300;
+      color: #c1272d;
+    }
+  }
+
+  .nama-product {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #c1272d;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 65%;
+  }
+
+  .harga-product {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    width: 35%;
+    padding-left: 10px;
+  }
+}
+
+// artikel
+.artikel {
+  .list-artikel {
+    .judul-artikel {
+      color: #000;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    a {
+      color: #c1272d;
+      font-weight: bold;
+    }
+  }
+}
+
+// keunggulan
+.keunggulan {
+  hr {
+    border: 1px solid #000;
+    width: 100%;
+    // @include media-breakpoint-down(md) {
+    //   display: none;
+    // }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+}
